@@ -120,6 +120,7 @@ def follow(username):
     else:
         return redirect(url_for('index'))
 
+
 @app.route('/unfollow/<username>', methods=['POST'])
 @login_required
 def unfollow(username):
